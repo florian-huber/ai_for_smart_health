@@ -1,0 +1,12 @@
+name: ai_smart_health
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - matplotlib
+  - jupyter
+  - spyder>=5.*
+  - scikit-learn
+  - seaborn
+  - shap
+  - pytest
