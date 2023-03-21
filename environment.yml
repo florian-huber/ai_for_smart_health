@@ -9,5 +9,8 @@ dependencies:
   - scikit-learn
   - seaborn
   - shap
+  - tensorflow
   - tqdm
   - pytest
+  - pip:
+    - opencv-python
