@@ -1,4 +1,5 @@
-# Materials and tests for "Inteligent Systems for Smart Health"
+# Intelligent Systems for Smart Health
+Materials and tests to support the course at Düsseldorf University of Applied Sciences (HSD).
 
 
 ## Create new environment for this course (recommended)
