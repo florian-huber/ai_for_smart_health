@@ -3,9 +3,7 @@ dependencies:
   - python=3.9
   - numpy
   - pandas
-  - matplotlib
-  - jupyter
-  - spyder>=5.*
+  - pip
   - scikit-learn
   - seaborn
   - shap
@@ -13,4 +11,7 @@ dependencies:
   - tqdm
   - pytest
   - pip:
+    - jupyter
+    - matplotlib
     - opencv-python
+    - spyder>=5.*
