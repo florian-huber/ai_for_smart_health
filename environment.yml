@@ -17,4 +17,4 @@ dependencies:
     - opencv-python
     - pydotplus
     - spyder>=5.*
-    - xgboost
+    - lightgbm
