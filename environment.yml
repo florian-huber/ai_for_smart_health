@@ -7,7 +7,7 @@ dependencies:
   - scikit-learn
   - seaborn
   - shap
-  - tensorflow
+  - tensorflow<=2.9
   - tqdm
   - pytest
   - pip:
