@@ -9,6 +9,7 @@ git clone https://github.com/florian-huber/ai_for_smart_health.git
 ```
 Then, in the folder with the `environment.yml` file simply run:
 ```
+conda update -n base -c defaults conda  # optional (to make sure conda is up to date)
 conda env create -f environment.yml
 ```
 This should create a Python 3.9 environment with the packages listed in the yaml-file.
