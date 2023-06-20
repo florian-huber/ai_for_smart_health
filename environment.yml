@@ -15,6 +15,7 @@ dependencies:
     - lifelines
     - matplotlib
     - opencv-python
+    - openpyxl
     - pydotplus
     - spyder>=5.*
     - lightgbm
