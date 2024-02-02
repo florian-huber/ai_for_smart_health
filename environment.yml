@@ -1,13 +1,13 @@
 name: ai_smart_health
 dependencies:
-  - python=3.9
+  - python=3.10
   - numpy
   - pandas
   - pip
+  - pytorch
   - scikit-learn
   - seaborn
   - shap
-  - tensorflow
   - tqdm
   - pytest
   - pip:
