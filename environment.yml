@@ -8,6 +8,7 @@ dependencies:
   - scikit-learn
   - seaborn
   - shap
+  - torchvision
   - tqdm
   - pytest
   - pip:
