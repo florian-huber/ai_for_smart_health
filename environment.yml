@@ -2,8 +2,6 @@ name: ai_smart_health
 dependencies:
   - python=3.10
   - numpy
-  - onnx
-  - onnxscript
   - pandas
   - pip
   - pytorch
@@ -18,6 +16,8 @@ dependencies:
     - jupyter
     - lifelines
     - matplotlib
+    - onnx
+    - onnxscript
     - opencv-python
     - openpyxl
     - pydotplus
