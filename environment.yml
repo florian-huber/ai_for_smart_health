@@ -22,5 +22,4 @@ dependencies:
     - openpyxl
     - pydotplus
     - spyder>=5.*
-    - unittest
     - lightgbm
