@@ -30,7 +30,12 @@ class XRayDataset(Dataset):
         self.img_metadata = metadata
         self.img_dir = img_dir
         self.classes = classes
-        self.img_mode = ImageReadMode.RGB if img_mode.lower() == "rgb" else ImageReadMode.GRAY
+        if img_mode.lower() == "rgb":
+            self.img_mode = ImageReadMode.RGB
+        elif img_mode.lower() == "gray":
+            self.img_mode = ImageReadMode.GRAY
+        else:
+            raise ValueError("Unknown image mode (img_mode), must be GRAY or RGB.")
         self.transform = transform
         self.target_transform = target_transform
 
