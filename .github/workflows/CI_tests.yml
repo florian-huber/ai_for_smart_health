@@ -34,3 +34,6 @@ jobs:
       - name: Show pip list
         run: |
           pip list
+      - name: Run tests
+        run: |
+          pytest
