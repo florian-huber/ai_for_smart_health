@@ -10,6 +10,7 @@ from sklearn.metrics import roc_curve, auc
 def plot_roc_curves(labels: np.ndarray,
                     predictions: np.ndarray,
                     classes: list,
+                    ax=None,
                     sorted: bool = True,
                     colormap: str = "viridis_r"):
     """Plot ROC curves for multi-class prediction.
@@ -20,6 +21,7 @@ def plot_roc_curves(labels: np.ndarray,
         labels (numpy.ndarray): Ground truth labels, shape (n_samples, n_classes).
         predictions (numpy.ndarray): Predicted probabilities, shape (n_samples, n_classes).
         classes (list): List of class names.
+        ax (matplotlib.axes.Axes, optional): Axes object to plot on. If not provided, a new plot will be created.
         sorted (bool, optional): Whether to sort classes based on AUC score (default True).
         colormap (str, optional): Matplotlib colormap for color mapping (default "viridis_r").
     """
@@ -52,7 +54,9 @@ def plot_roc_curves(labels: np.ndarray,
     colors = cmap(np.linspace(0, 1, n_classes))
 
     # Plot all ROC curves
-    fig, ax = plt.subplots(figsize=(8, 8))
+    if ax is None:
+        fig, ax = plt.subplots(figsize=(8, 8))
+
     for count, i in enumerate(indices):
         ax.plot(
             fpr[i],
