@@ -26,6 +26,14 @@ def plot_roc_curves(
         ax (matplotlib.axes.Axes, optional): Axes object to plot on. If not provided, a new plot will be created.
         sorted (bool, optional): Whether to sort classes based on AUC score (default True).
         colormap (str, optional): Matplotlib colormap for color mapping (default "viridis_r").
+
+    Example:
+
+    .. code-block:: python
+
+        plot_roc_curves(labels, predictions, classes)
+        plt.show()
+
     """
     # Initialize dictionaries for false positive rate, true positive rate, and list for AUC scores
     fpr = {}
@@ -75,6 +83,3 @@ def plot_roc_curves(
     # Add legend and grid
     ax.legend(loc="lower right", fontsize=10)
     ax.grid(True)
-
-    # Show the plot
-    plt.show()

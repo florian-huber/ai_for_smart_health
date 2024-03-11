@@ -2,10 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from ai_smart_health.model_evaluation import plot_roc_curves
 
-import matplotlib
-
-matplotlib.use("Agg")
-
 
 # Define a mockup of labels, predictions, and class names for testing
 labels = np.array([[0, 1, 1], [1, 0, 1], [1, 1, 0], [0, 0, 1]])
