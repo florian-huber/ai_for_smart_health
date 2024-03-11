@@ -7,12 +7,14 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve, auc
 
 
-def plot_roc_curves(labels: np.ndarray,
-                    predictions: np.ndarray,
-                    classes: list,
-                    ax=None,
-                    sorted: bool = True,
-                    colormap: str = "viridis_r"):
+def plot_roc_curves(
+    labels: np.ndarray,
+    predictions: np.ndarray,
+    classes: list,
+    ax=None,
+    sorted: bool = True,
+    colormap: str = "viridis_r",
+):
     """Plot ROC curves for multi-class prediction.
 
     Computes ROC curve and ROC area for each class and plots them.
@@ -58,27 +60,21 @@ def plot_roc_curves(labels: np.ndarray,
         fig, ax = plt.subplots(figsize=(8, 8))
 
     for count, i in enumerate(indices):
-        ax.plot(
-            fpr[i],
-            tpr[i],
-            color=colors[count],
-            lw=2,
-            label=f"{classes[i]} (AUC = {roc_auc[i]:0.2f})"
-        )
+        ax.plot(fpr[i], tpr[i], color=colors[count], lw=2, label=f"{classes[i]} (AUC = {roc_auc[i]:0.2f})")
 
     # Plot the random classifier line
-    ax.plot([0, 1], [0, 1], 'k--')
-    
+    ax.plot([0, 1], [0, 1], "k--")
+
     # Set plot limits and labels
     ax.set_xlim([0.0, 1.0])
     ax.set_ylim([0.0, 1.0])
-    ax.set_xlabel('False Positive Rate')
-    ax.set_ylabel('True Positive Rate')
-    ax.set_title('Receiver Operating Characteristic for Multi-class Prediction')
-    
+    ax.set_xlabel("False Positive Rate")
+    ax.set_ylabel("True Positive Rate")
+    ax.set_title("Receiver Operating Characteristic for Multi-class Prediction")
+
     # Add legend and grid
     ax.legend(loc="lower right", fontsize=10)
     ax.grid(True)
-    
+
     # Show the plot
     plt.show()

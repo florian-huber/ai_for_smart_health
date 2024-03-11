@@ -67,9 +67,7 @@ class XRayDataset(Dataset):
         image = read_image(img_path, mode=self.img_mode)
 
         # Extract label(s) for the current image
-        label = torch.tensor(
-            self.img_metadata[self.classes].iloc[idx, :], dtype=torch.float32
-        )
+        label = torch.tensor(self.img_metadata[self.classes].iloc[idx, :], dtype=torch.float32)
 
         # Apply transformations to the image and label if any
         if self.transform:
