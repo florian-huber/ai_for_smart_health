@@ -9,7 +9,7 @@ dependencies:
   - seaborn
   - shap
   - tensorboard
-  - torchvision
+  - torchvision>=0.17
   - tqdm
   - pytest
   - pip:
