@@ -23,6 +23,7 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v2
         with:
           environment-file: environment.yml
+          miniconda-version: "latest"
       - name: Python info
         run: |
           which python
