@@ -12,7 +12,7 @@ Then, in the folder with the `environment.yml` file simply run:
 conda update -n base -c defaults conda  # optional (to make sure conda is up to date)
 conda env create -f environment.yml
 ```
-This should create a Python 3.10 environment with the packages listed in the yaml-file.
+This should create a Python 3.12 environment with the packages listed in the yaml-file.
 
 ## Hardware & performance
 This course will include a lot of machine learning, mostly also deep learning. For this, we will work with the Python libraries scikit-learn (classical machine learning) and Pytorch (deep learning).
