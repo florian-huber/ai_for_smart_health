@@ -22,5 +22,5 @@ dependencies:
     - opencv-python
     - openpyxl
     - pydotplus
-    - spyder>=5.*
+    - spyder>=5.0
     - lightgbm
