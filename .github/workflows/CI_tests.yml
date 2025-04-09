@@ -24,6 +24,7 @@ jobs:
         with:
           environment-file: environment.yml
           miniconda-version: "latest"
+          use-mamba: "true"
       - name: Python info
         run: |
           which python
